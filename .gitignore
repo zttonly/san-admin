@@ -10,6 +10,7 @@ _roadhog-api-doc
 /dist
 /.vscode
 output
+.sanp
 
 # misc
 .DS_Store

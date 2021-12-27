@@ -20,80 +20,14 @@
     top: 0;
 }
 
-.@{pro-layout-global-header-prefix-cls} {
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 16px;
-    background: @pro-layout-header-bg;
+.@{ant-prefix}-layout-header .@{pro-layout-global-header-prefix-cls} {
     box-shadow: @pro-layout-header-box-shadow;
 
-    >* {
-        height: 100%;
-    }
-
-    &-collapsed-button {
-        display: flex;
-        align-items: center;
-        margin-left: 16px;
-        font-size: 20px;
-    }
-
-    &-layout {
-        &-mix {
-            background-color: @layout-sider-background;
-
-            .@{pro-layout-global-header-prefix-cls}-logo {
-                h1 {
-                    color: @btn-primary-color;
-                }
-            }
-
-            .anticon {
-                color: @btn-primary-color;
-            }
-        }
-    }
-
     &-logo {
-        position: relative;
-        overflow: hidden;
         margin-right: 60px;
-
-        a {
-            display: flex;
-            align-items: center;
-            height: 100%;
-
-            img {
-                height: 28px;
-            }
-
-            h1 {
-                height: 32px;
-                margin: 0 0 0 8px;
-                margin: 0 0 0 12px;
-                color: @primary-color;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 32px;
-            }
-        }
-    }
-
-    &-menu {
-        .anticon {
-            margin-right: 8px;
-        }
-
-        .@{ant-prefix}-dropdown-menu-item {
-            min-width: 160px;
-        }
     }
 
     &.dark {
-        height: @pro-layout-header-height;
         background: #000;
 
         .action {
