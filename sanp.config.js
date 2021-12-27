@@ -77,7 +77,7 @@ module.exports = {
             // css
             config.plugins.push(createThemeColorReplacerPlugin());
 
-            internals.replaceOptions(/\.less$/, 'less-loader', {
+            internals.replaceOption(/\.less$/, 'less-loader', {
                 modifyVars: {
                     'primary-color': theme['primary-color']
                 },
