@@ -4,6 +4,7 @@
     "description": "A magical san admin. An out-of-box UI solution for enterprise applications. Newest development stack of san. Lots of awesome features",
     "scripts": {
         "sstart": "sanp dev",
+        "sbuild": "sanp build",
         "start": "cross-env NODE_ENV=dev MOCK=true san serve --config san.config.js",
         "start:no-mock": "cross-env NODE_ENV=dev MOCK=false san serve --config san.config.js",
         "start:test": "cross-env NODE_ENV=dev SAN_APP_ENV=test MOCK=false san serve --config san.config.js",

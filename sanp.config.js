@@ -5,7 +5,7 @@ const createThemeColorReplacerPlugin = require('./config/themePluginConfig.js');
 const resolve = pathname => path.resolve(__dirname, pathname);
 
 const outDir = 'dist';
-const {proxy, theme} = require('./config');
+const {theme} = require('./config');
 const updateThemeSetting = require('./config/updateSetting');
 
 module.exports = {
@@ -91,7 +91,8 @@ module.exports = {
             updateThemeSetting(app);
         },
         contentBase: `${outDir}/`,
-        proxy
+        // 配置文件
+        mock: 'config/proxy.js',
     }
 
 };
