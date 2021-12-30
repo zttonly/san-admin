@@ -30,8 +30,8 @@ import {Component} from 'san';
 import {connect} from '@store';
 import ProLayout from '@/components/BasicLayout/BasicLayout.san';
 import RightContent from '@/components/GlobalHeader/RightContent.san';
-import {logo, title} from '@/config/index';
-import logoImg from '@/assets/logo.svg';
+import {title} from '@/config/index';
+import logoImg from '@/public/assets/logo.svg';
 import router from '@/router';
 import {DefaultFooter, SettingDrawer} from '@/components/BasicLayout';
 

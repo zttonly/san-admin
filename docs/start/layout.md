@@ -30,7 +30,7 @@ const routes = [
     {
         rule: '/',
         hideInMenu: true,
-        Component: () => import('/src/pages/dashboard/analysis'),
+        Component: () => import('/containers/dashboard/analysis'),
         name: '欢迎',
         icon: 'smile'
     },
@@ -41,19 +41,19 @@ const routes = [
         children: [
             {
                 rule: '/dashboard/analysis',
-                Component: () => import('/src/pages/dashboard/analysis'),
+                Component: () => import('/containers/dashboard/analysis'),
                 name: '分析页',
                 root: '首页',
             },
             {
                 rule: '/dashboard/monitor',
-                Component: () => import('/src/pages/dashboard/monitor'),
+                Component: () => import('/containers/dashboard/monitor'),
                 name: '监控页',
                 root: '首页',
             },
             {
                 rule: '/dashboard/workplace',
-                Component: () => import('/src/pages/dashboard/workplace'),
+                Component: () => import('/containers/dashboard/workplace'),
                 name: '工作台',
                 root: '首页',
             },
@@ -67,21 +67,21 @@ const routes = [
             {
                 rule: '/form/basic-form',
                 name: 'basic-form',
-                Component: () => import('/src/pages/form/basic-form'),
+                Component: () => import('/containers/form/basic-form'),
                 name: '基础表单',
                 root: '首页',
             },
             {
                 rule: '/form/step-form',
                 name: 'step-form',
-                Component: () => import('/src/pages/form/step-form'),
+                Component: () => import('/containers/form/step-form'),
                 name: '分步表单',
                 root: '首页',
             },
             {
                 rule: '/form/advanced-form',
                 name: 'advanced-form',
-                Component: () => import('/src/pages/form/advanced-form'),
+                Component: () => import('/containers/form/advanced-form'),
                 name: '高级表单',
                 root: '首页',
             },
@@ -92,5 +92,5 @@ const routes = [
 export default routes;
 ```
 
-映射路由和页面布局（组件）的关系如代码所示，完整映射转换实现可以参看 [routes.js](https://github.com/ecomfe/san-admin/blob/master/src/config/routes.js)。
+映射路由和页面布局（组件）的关系如代码所示，完整映射转换实现可以参看 [routes.js](https://github.com/ecomfe/san-admin/blob/master/config/routes.js)。
 

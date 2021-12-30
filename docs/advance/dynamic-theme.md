@@ -68,9 +68,9 @@ Admin 中提供了一个可以在线切换主题和布局的 设置抽屉，使�
 
 为了方便预览，设置中的配置项会被保存在localStorage中，你可以将其拷贝给他人，分享效果。
 
-您一旦确定了这个配置，可以点击 拷贝代码 按钮将其拷贝，并在 `src/config/defaultSetting.js` 中覆盖默认设置。这样您可以将该主题发布和部署
+您一旦确定了这个配置，可以点击 拷贝代码 按钮将其拷贝，并在 `config/defaultSetting.js` 中覆盖默认设置。这样您可以将该主题发布和部署
 
-`src/config/defaultSetting.js` 内容如下：
+`config/defaultSetting.js` 内容如下：
 
 ```js
 module.exports = {

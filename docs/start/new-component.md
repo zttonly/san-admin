@@ -18,7 +18,7 @@ lang: zh-CN
 
 ## 新建文件
 
-在 `src/components` 下新建一个以组件名命名的文件夹，注意首字母大写，命名尽量体现组件的功能，这里就叫 `ImageWrapper`。在此文件夹下新增 san 文件及样式文件（如果需要），命名为 `index.san` 和 `index.less`。
+在 `components` 下新建一个以组件名命名的文件夹，注意首字母大写，命名尽量体现组件的功能，这里就叫 `ImageWrapper`。在此文件夹下新增 san 文件及样式文件（如果需要），命名为 `index.san` 和 `index.less`。
 
 你的代码大概是这个样子：
 

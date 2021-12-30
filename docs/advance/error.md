@@ -17,8 +17,8 @@ lang: zh-CN
 
 针对页面级的报错，我们提供了两类页面供你选择，可以很方便地实现一个报错页面：
 
-* Exception 异常页，目前有 [404](https://github.com/ecomfe/san-admin/blob/master/src/pages/exception/404.san)，[403](https://github.com/ecomfe/san-admin/blob/master/src/pages/exception/403.san)，[500](https://github.com/ecomfe/san-admin/blob/master/src/pages/exception/500.san)三种错误类型页面可以选择。
-* Result 结果页，目前有[成功页](https://github.com/ecomfe/san-admin/blob/master/src/pages/result/success/index.san)，[失败页](https://github.com/ecomfe/san-admin/blob/master/src/pages/result/fail/index.san)两种页面可以选择，也可自定义文案等内容。
+* Exception 异常页，目前有 [404](https://github.com/ecomfe/san-admin/blob/master/containers/exception/404.san)，[403](https://github.com/ecomfe/san-admin/blob/master/containers/exception/403.san)，[500](https://github.com/ecomfe/san-admin/blob/master/containers/exception/500.san)三种错误类型页面可以选择。
+* Result 结果页，目前有[成功页](https://github.com/ecomfe/san-admin/blob/master/containers/result/success/index.san)，[失败页](https://github.com/ecomfe/san-admin/blob/master/containers/result/fail/index.san)两种页面可以选择，也可自定义文案等内容。
 
 如 403 页面：
 
@@ -57,7 +57,7 @@ export default {
 
 ### 实现
 
-关于表单项报错，请参考 [San Admin Form](https://github.com/ecomfe/san-admin/tree/master/src/pages/form) 中的实现。对于操作反馈和网络请求错误提示，有一些组件可能会用到：
+关于表单项报错，请参考 [San Admin Form](https://github.com/ecomfe/san-admin/tree/master/containers/form) 中的实现。对于操作反馈和网络请求错误提示，有一些组件可能会用到：
 
 * [Alert](https://ecomfe.github.io/santd/#/components/alert)
 * [Message](https://ecomfe.github.io/santd/#/components/message)
