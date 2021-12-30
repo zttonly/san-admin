@@ -39,7 +39,7 @@ const routes = [
     children: [
       {
         rule: '/new-router/new',
-        Component: () => import('/src/pages/dashboard/analysis'),
+        Component: () => import('/containers/dashboard/analysis'),
         name: '新增页面',
         root: '首页',
       }

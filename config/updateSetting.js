@@ -19,7 +19,7 @@
 const path = require('path');
 const fs = require('fs');
 const postUrl = '/___updating_theme_setting___';
-const settingPath = path.resolve(__dirname, '../src/config/defaultSetting.js');
+const settingPath = path.resolve(__dirname, '../config/defaultSetting.js');
 
 module.exports = (app) => {
     app.use(require('express').urlencoded({

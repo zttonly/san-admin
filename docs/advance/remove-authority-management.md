@@ -57,7 +57,7 @@ function initRouter({router, store}) {
 
 ### 路由注册
 
-修改 `src/router/index.js`,  将静态路由配置 constantRouterMap 和 动态路由配置 asyncRouterMap 合并后直接 `router.add` 添加就行
+修改 `router/index.js`,  将静态路由配置 constantRouterMap 和 动态路由配置 asyncRouterMap 合并后直接 `router.add` 添加就行
 
 代码如下：
 ```js

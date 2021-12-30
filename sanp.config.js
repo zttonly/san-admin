@@ -57,7 +57,7 @@ module.exports = {
                     },
                     commons: {
                         name: 'commons',
-                        test: resolve('src/components'),
+                        test: resolve('components'),
                         minChunks: 2,
                         priority: 5,
                         reuseExistingChunk: true
@@ -67,8 +67,7 @@ module.exports = {
         },
         finalize: (config, internals, context) => {
             // 增加alias
-            config.resolve.alias['@'] = resolve('src');
-            config.resolve.alias['@store'] = context.resolver.resolve('src/lib/Store.js');
+            config.resolve.alias['@store'] = context.resolver.resolve('lib/Store.js');
 
             config.plugins.push(new webpack.ContextReplacementPlugin(
                 /dayjs[\/\\]locale$/,
