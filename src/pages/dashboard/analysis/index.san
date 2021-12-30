@@ -1,5 +1,5 @@
 <template>
-    <grid-content class="">
+    <grid-content>
         <div class="analysis-content">
             <div class="card-row-4">
                 <s-chartcard

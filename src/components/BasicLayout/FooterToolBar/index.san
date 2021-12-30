@@ -13,7 +13,7 @@
 export default {
     computed: {
         barWidth() {
-            return `calc(100% - ${this.siderWidth || 200}px)`;
+            return `calc(100% - ${this.data.get('siderWidth') || 200}px)`;
         },
         className() {
             const prefixCls = this.data.get('prefixCls');
