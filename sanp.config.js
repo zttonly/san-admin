@@ -1,5 +1,5 @@
 const path = require('path');
-const webpack = require('/Users/zhangtingting/workspace/baidu/hulk/sanp/node_modules/webpack');
+const webpack = require('webpack');
 const createThemeColorReplacerPlugin = require('./config/themePluginConfig.js');
 
 const resolve = pathname => path.resolve(__dirname, pathname);

@@ -92,5 +92,5 @@ const routes = [
 export default routes;
 ```
 
-映射路由和页面布局（组件）的关系如代码所示，完整映射转换实现可以参看 [routes.js](https://github.com/ecomfe/san-admin/blob/master/config/routes.js)。
+映射路由和页面布局（组件）的关系如代码所示，完整映射转换实现可以参看 [routes.js](https://github.com/ecomfe/san-admin/blob/master/router/routes.js)。
 

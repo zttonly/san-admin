@@ -1,5 +1,5 @@
 import {router} from 'san-router';
-import {constantRouterMap} from '@/config/routes';
+import {constantRouterMap} from '@/router/routes';
 import {addRoute} from './utils';
 export * from './utils';
 
