@@ -1,5 +1,5 @@
 import {builder} from 'san-update';
-import { asyncRouterMap, constantRouterMap } from '@/config/routes';
+import { asyncRouterMap, constantRouterMap } from '@/router/routes';
 import cloneDeep from 'lodash.clonedeep';
 
 /**

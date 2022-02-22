@@ -10,13 +10,13 @@ lang: zh-CN
 
 在这一部分，脚手架通过结合一些配置文件、基本算法及工具函数，搭建好了路由和菜单的基本框架，主要涉及以下几个模块/功能：
 
-- `路由管理` 通过约定的语法根据在 `config/routes.js` 中配置路由。
+- `路由管理` 通过约定的语法根据在 `router/routes.js` 中配置路由。
 - `菜单生成` 根据路由配置来生成菜单。菜单项名称，嵌套路径与路由高度耦合。
 - `面包屑` 组件 PageContainer 中内置的面包屑也可由配置信息自动生成。
 
 ### 路由
 
-目前脚手架中所有的路由都通过 `config/routes.js`来统一管理，在 `router` 的配置中我们增加了一些参数，如 `hideInMenu`,`name`,`icon`，来辅助生成菜单。其中：
+目前脚手架中所有的路由都通过 `router/routes.js`来统一管理，在 `router` 的配置中我们增加了一些参数，如 `hideInMenu`,`name`,`icon`，来辅助生成菜单。其中：
 
 - `hideInMenu` 用于隐藏不需要在菜单中展示的路由。
 - `name` 和 `icon`分别代表生成菜单项的文本和图标，icon 列表具体可以查看 [santd](https://ecomfe.github.io/santd/#/components/icon)。

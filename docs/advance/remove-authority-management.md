@@ -63,7 +63,7 @@ function initRouter({router, store}) {
 ```js
 改写前
 import {router} from 'san-router';
-import {constantRouterMap} from '@/config/routes';
+import {constantRouterMap} from '@/router/routes';
 
 export const addRoute = (item) => {
     if (item.children) {
@@ -93,7 +93,7 @@ export default router;
 ```js
 // 改写后
 import {router} from 'san-router';
-import {constantRouterMap, asyncRouterMap} from '@/config/routes';
+import {constantRouterMap, asyncRouterMap} from '@/router/routes';
 
 export const addRoute = (item) => {
     if (item.children) {

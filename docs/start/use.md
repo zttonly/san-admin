@@ -60,49 +60,60 @@ $ cd san-admin
 我们已经为你生成了一个完整的开发框架，提供了涵盖中后台开发的各类功能和坑位，下面是整个项目的目录结构。
 
 ```
-├── public
-│   ├── favicon.ico            
+├── api
+│   ├── user.js                   # 接口请求封装
+│   └── ...
+├── assets                        # 静态资源
+│   ├── logo.svg  
+├── components                    # 公共UI组件
+│   ├── BasicLayout               # 布局相关的所有组件
+│   │   ├── GlobalFooter          # 全局的Footer组件
+│   │   ├── GlobalHeader          # 全局的Header组件
+│   │   ├── PageContainer         # 包含面包屑的布局组件
+│   │   ├── SettingDrawer         # 抽屉组件，用于可视化配置页面布局
+│   │   ├── SiderMenu             # 侧边栏组件
+│   │   ├── TopNavHeader          # Nav组件
+│   │   ├── Header                # Header
+│   │   ├── Footer                # Footer
+│   │   ├── BasicLayout           # 包含SiderMunu，Header,Footer组件的一个重型布局组件
+│   │   ├── index.js              # 组件入口，用户批量导出组件
+│   └── ...
+├── config                        # 项目编译相关配置文件
+│   ├── index.js                  # 配置入口
+│   ├── proxy.js                  # 代理配置
+│   ├── themePluginConfig.js      # 主题更新逻辑
+│   └── updateSetting.js          # Setting更新逻辑
+├── containers                    # 页面组件
+│   ├── list                      # 列表模块
+│   │   ├── card-list             # 卡片列表页面
+│   │   ├── basic-list            # 基础列表页面
+│   │   ├── ...               
+│   └── form                      # 表单模块
+│       └── ...
+├── layouts           
 │   ├── index.ejs                 # html模版文件
+├── lib                           # lib 库
+│   ├── Store.js                  # san-store封装类
+│   └── utils                     # 工具库
+│       ├── util.js               # 常用工具方法
+│       ├── request.js            # 封装的axios
+│       └── ...
 ├── mock                          # mock数据
 │   ├── list
 │   │   └── table-list.json5      # 列表数据
 │   ├── user
 │   │   └── user-info.json        # 用户相关数据
 │   └── index.js                  # mock server配置
-├── config                        # 项目编译相关配置文件
-│   └── index.js                  # 配置入口
-│   └── proxy.js                  # 代理配置
-│   └── themePluginConfig.js      # 主题更新逻辑
-│   └── updateSetting.js          # Setting更新逻辑
-├── src
-│   ├── assets                    # 公共资源
-│   ├── components                # 公共UI组件
-│   │   ├── BasicLayout           # 布局相关的所有组件
-│   │   │   ├── GlobalFooter      # 全局的Footer组件
-│   │   │   ├── GlobalHeader      # 全局的Header组件
-│   │   │   ├── PageContainer     # 包含面包屑的布局组件
-│   │   │   ├── SettingDrawer     # 抽屉组件，用于可视化配置页面布局
-│   │   │   ├── SiderMenu         # 侧边栏组件
-│   │   │   ├── TopNavHeader      # Nav组件
-│   │   │   ├── Header            # Header
-│   │   │   ├── Footer            # Footer
-│   │   │   ├── BasicLayout       # 包含SiderMunu，Header,Footer组件的一个重型布局组件
-│   │   │   ├── index.js          # 组件入口，用户批量导出组件
-│   │   └── ...
-│   ├── lib                       # lib 库
-│   │   ├── App.js                # 实例化根组件类
-│   │   ├── Store.js              # san-store封装类
-│   │   └── utils                 # 工具库
-│   │       ├── util.js           # 常用工具方法
-│   │       ├── request.js        # 封装的axios
-│   │       └── ...
-│   └── pages                     # 页面
-│       ├── list                  # 列表模块
-│       │   ├── card-list         # 卡片列表页面
-│       │   ├── basic-list        # 基础列表页面
-│       │   ├── ...               
-│       └── form                  # 表单模块
-│           └── ...
+├── pages                         # 路由组件入口
+│   ├── index.san                 # 单页只有一个入口
+├── public
+│   └── favicon.ico               # 公共资源
+├── router
+│   ├── routes.js                 # 路由配置
+│   └── index.js                  # 路由处理
+├── store
+│   ├── index.js                  # store入口
+│   └── stores.js
 ├── .browserslistrc               # 目标浏览器版本
 ├── .gitignore                    # git忽略目录及文件的配置文件
 ├── .npmrc                        # npm源配置文件
