@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const createThemeColorReplacerPlugin = require('./config/themePluginConfig.js');
+const createThemeColorReplacerPlugin = require('./config/themePluginConfig');
 
 const resolve = pathname => path.resolve(__dirname, pathname);
 
@@ -65,9 +65,9 @@ module.exports = {
                 }
             }
         },
-        finalize: (config, internals, context) => {
+        finalize: (config, internals) => {
             // 增加alias
-            config.resolve.alias['@store'] = context.resolver.resolve('lib/Store.js');
+            config.resolve.alias['@store'] = path.resolve('lib/Store.js');
 
             config.plugins.push(new webpack.ContextReplacementPlugin(
                 /dayjs[\/\\]locale$/,
